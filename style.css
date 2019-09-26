@@ -1,0 +1,258 @@
+body, html {
+  height: 100vmax;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image, .main-image {
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(0.6vmax);
+  -webkit-filter: blur(0.6vmax);
+  background-attachment: fixed;
+
+}
+.hero-image {
+  background-image: url("images/headerimage.jpg");
+  height:125vh;
+}
+.main-image {
+  background-image: url("images/mars.jpg");
+  height: 125vh;
+}
+  
+.hero-text, .main-text, .main-text2, .main-text3, .main-text4 {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 35vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80vw;
+  text-align: center;
+}
+.hero-text {
+  top: 32vh;
+  left: 50vw;
+  width: 80vw;
+  text-align:center;
+  border: 0.15vmax solid black;
+  padding: 2vw;
+
+}
+
+.main-text {
+  top: 75.4vh;
+  left: 27.93vw;
+  width: 36vw;
+  text-align:left;
+  border: 0.15vmax solid black;
+  padding-left: 2vw;
+  padding-right: 2vw; 
+  font-size: 1.1vw;
+  height: 40vh;
+
+}
+.main-text3{
+  top: 140vh;
+  height: 160vh;
+  border: 0.2vw solid black;
+  text-align:left;
+  padding: 2vw;
+}
+.main-text2 {
+  top: 75.4vh;
+  left: 72.1vw;
+  width: 36vw;
+  text-align:left;
+  border: 0.15vmax solid rgb(0, 0, 0);
+  padding: 2vw;
+  font-size: 1.1vw;
+  height: 31.2vh;
+
+}
+.main-text4 {
+  top: 20vh;
+  left: 64.2vw;
+  width: 36vw;
+  text-align:left;
+  border: 0.15vmax solid rgb(0, 0, 0);
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 1.1vw;
+  height: 40vh;
+}
+.hero-text button{
+  color: rgb(10, 206, 255);
+  font-weight: bolder;  
+  background: transparent;
+  border: 0.2vw black;
+  padding: 1vmax 1vmax;
+  font-size: 1vmax;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  margin: 0vmax;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.8;
+}
+.hero-text button:hover{
+  box-shadow: 0px 0.8vmax 0.8vmax #888888;
+  opacity: 0.8;
+  font-weight: bolder;
+  color:rgb(111, 211, 245);
+  
+}
+
+.hero-text button::before{
+  content: "";
+  position: absolute; 
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #0059ff;
+  z-index: -1;
+  transition: 1s;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+
+.container {
+	width: 80vw;
+	margin: 0.1vmax auto;
+}
+
+header {
+  background-color: rgba(0, 0, 0);
+  line-height:2.5vmax;
+  
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+}
+
+nav {
+  float: left;
+  position: absolute;
+  overflow: hidden;
+  top: 0px;
+  z-index: 5;
+  font-weight:bold;
+}
+
+nav ul {
+  margin: 0vmax;
+  padding: 0vmax;
+  list-style: none;
+  font-size: 1vmax;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 7vw;
+  padding-top: 2.3vh;
+  position: relative;
+  
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8vw;
+  margin-top: 0;
+
+
+}
+
+nav a:hover {
+  color: black;
+}
+nav a.active {
+}
+nav a::before {
+  content: '';
+  height: 0.2vmax;
+  background-color: rgb(19, 180, 255);
+  position: absolute;
+  top: 2vh;
+  width: 0%;
+  transition: all ease-in 500ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-size: 2.5vmax;
+  top:0;
+  position:-webkit-sticky; 
+  position:sticky; 
+}
+
+h2 {
+  font-size: 1.5vmax;
+}
+
+
+.main {
+  background-color: #D88132;
+  filter: blur(0.6vmax);
+  -webkit-filter: blur(0.6vmax)
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: orange;
+  width: 15vw;
+  color: white;
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: lightblue;
+}
+
+.form {
+  border-radius: 5px;
+  padding: 20px;
+
