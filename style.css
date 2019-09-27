@@ -282,29 +282,33 @@ input[type=submit]:hover {s
 }
 
 .news-text1{
-  top: 67vh;
-  height: 20vh;
+  top: 66vh;
+  height: 25vh;
   border: 0.2vw solid black;
   text-align:left;
-  padding: 2vw;
+  padding-left: 2vw;  
+  padding-right: 2vw;
   left: 20vw;
   width: 20vw;
 }
 .news-text2{
-  top: 67vh;
-  height: 20vh;
+  top: 66vh;
+  height: 25vh;
   border: 0.2vw solid black;
   text-align:left;
-  padding: 2vw;
+  padding-left: 2vw;  
+  padding-right: 2vw;
   left: 50vw;
   width: 20vw;
 }
 .news-text3{
-  top: 67vh;
-  height: 20vh;
+  top: 66vh;
+  height: 25vh;
   border: 0.2vw solid black;
   text-align:left;
-  padding: 2vw;
+  padding-left: 2vw;  
+  padding-right: 2vw;
+  
   left: 80vw;
   width: 20vw;
 }
