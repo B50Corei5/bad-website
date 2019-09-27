@@ -10,11 +10,11 @@
 
 }
 .hero-image {
-  background-image: url("Images/headerimage.jpg");
+  background-image: url("images/headerimage.jpg");
   height:125vh;
 }
 .main-image {
-  background-image: url("Images/mars.jpg");
+  background-image: url("images/mars.jpg");
   height: 125vh;
 }
   
